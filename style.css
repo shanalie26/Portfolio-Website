@@ -309,3 +309,127 @@ section {
     margin: auto 0;
 }
 
+
+/* ==================== TECH STACK SECTION ==================== */
+
+#skills {
+    padding: 0;
+    min-height: 100vh;        
+    position: relative;
+}
+
+.skills-bg-wrapper {
+    background: #0f0f1e !important;
+    width: 100vw;
+    min-height: 100vh;
+    margin-left: calc(-50vw + 50%);
+    padding: 10vh 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#skills .section__text__p1 {
+    color: #aaa;
+    font-size: 1.2rem;
+}
+
+#skills .title {
+    color: white;
+    margin-bottom: 4rem;
+}
+
+.tech-stack-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    max-width: 1000px;
+    padding: 0 2rem;
+}
+
+.tech-card {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    transition: all 0.4s ease;
+    overflow: visible;
+}
+
+.tech-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.tech-icon {
+    width: 85px !important;
+    height: 85px !important;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.tech-name {
+    position: absolute;
+    top: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 9px 18px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    letter-spacing: 1px;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(100, 150, 255, 0.3);
+    transition: all 0.45s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 999;
+}
+
+.tech-card:hover .tech-name {
+    top: -80px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 1024px) {
+    .tech-stack-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tech-stack-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .tech-icon {
+        width: 75px;
+        height: 75px;
+    }
+    
+    #skills {
+        padding: 8vh 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #skills .title {
+        font-size: 2.5rem;
+    }
+}

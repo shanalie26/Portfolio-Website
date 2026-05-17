@@ -4,320 +4,466 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
+
 <body>
+
+    <!-- ================= NAVBAR ================= -->
+
     <nav id="desktop-nav">
+
         <div class="logo">PORTFOLIO</div>
+
         <div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Home</a></li>
                 <li><a href="#about">About me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+
         <button id="theme-toggle">🌙</button>
+
     </nav>
+
+    <!-- ================= MOBILE NAV ================= -->
+
     <nav id="hamburger-nav">
+
         <div class="logo">PORTFOLIO</div>
+
         <div class="hamburger-menu">
+
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
+
             <div class="menu-links">
-                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
                 <li><a href="#about" onclick="toggleMenu()">About me</a></li>
                 <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#achivements" onclick="toggleMenu()">Achivements</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
+
         </div>
-        <button id="theme-toggle">🌙</button>
+
     </nav>
+
+    <!-- ================= PROFILE ================= -->
+
     <section id="profile">
+
         <div class="section__pic-container">
-            <img src="./assests/ProPic.png" alt="pavanya profile picture">
+            <img src="./assests/ProPic.png" alt="Profile picture">
         </div>
+
         <div class="section__text">
+
             <p class="section__text__p1">Hello, I'm</p>
+
             <h1 class="title">Pavanya Shanali Rathnayaka</h1>
-            <p class="section__text__p2">UI/UX Developer , Mobile App Developer</p>
+
+            <p class="section__text__p2">
+                UI/UX Developer , Mobile App Developer
+            </p>
+
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assests/Pavanya CV.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+
+                <button class="btn btn-color-2"
+                    onclick="window.open('./assests/Pavanya CV.pdf')">
+                    Download CV
+                </button>
+
+                <button class="btn btn-color-1"
+                    onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+
             </div>
+
             <div id="socials-container">
-                <img src="./assests/linkedin.png" alt="My Linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/pavanya-shanali-rathnayaka-2180b0346/'">
-                <img src="./assests/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/shanalie26/'">
+
+                <img
+                    src="./assests/linkedin.png"
+                    alt="LinkedIn"
+                    class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/pavanya-shanali-rathnayaka-2180b0346/'"
+                >
+
+                <img
+                    src="./assests/github.png"
+                    alt="GitHub"
+                    class="icon"
+                    onclick="location.href='https://github.com/shanalie26/'"
+                >
+
             </div>
+
         </div>
+
     </section>
+
+    <!-- ================= ABOUT ================= -->
+
     <section id="about">
+
         <p class="section__text__p1">Get To Know More</p>
+
         <h1 class="title">About Me</h1>
+
         <div class="section-container">
+
             <div class="section__pic-container">
-                <img src="./assests/about-pic.png" alt="Profile picture" class="about-pic">
+                <img src="./assests/about-pic.png" alt="About picture" class="about-pic">
             </div>
+
             <div class="about-details-container">
+
                 <div class="about-containers">
+
                     <div class="details-container">
-                        <img src="./assests/experience.png" alt="Experience icon" class="icon">
+
+                        <img src="./assests/experience.png" alt="" class="icon">
+
                         <h3>Achievements</h3>
-                        <p>ESOFT Metro Campus<br/>(2022-2023)<br/>Diploma in Information Technology<br/></p>
+
+                        <p>
+                            ESOFT Metro Campus<br>
+                            (2022-2023)<br>
+                            Diploma in Information Technology
+                        </p>
+
                     </div>
+
                     <div class="details-container">
-                        <img src="./assests/education.png" alt="Education icon" class="icon">
+
+                        <img src="./assests/education.png" alt="" class="icon">
+
                         <h3>Education</h3>
-                        <p>SriLanka Institute of Information Technology<br/>(since late 2023)<br/>B.Sc. (Hons) in Information Technology<br/></p>
+
+                        <p>
+                            SriLanka Institute of Information Technology<br>
+                            (since late 2023)<br>
+                            B.Sc. (Hons) in Information Technology
+                        </p>
+
                     </div>
+
                 </div>
+
                 <div class="text-container">
-                    <p>I’m an IT undergraduate passionate about learning
-                         new technologies and building simple, meaningful 
-                         digital experiences. I enjoy exploring UI/UX design, 
-                         mobile app concepts, and modern web development 
-                         while continuously improving my skills through 
-                         hands-on projects.<br/><br/>
+
+                    <p>
+                        I’m an IT undergraduate passionate about learning
+                        new technologies and building simple, meaningful
+                        digital experiences. I enjoy exploring UI/UX design,
+                        mobile app concepts, and modern web development
+                        while continuously improving my skills through
+                        hands-on projects.
+                        <br><br>
 
                         I’m a detail-oriented learner who loves creating clean,
-                         aesthetic designs—whether it’s a Figma prototype, 
-                         a mobile app concept, or a web interface. As I grow 
-                         in the IT field, I’m focused on developing strong 
-                         technical skills, building real-world projects, and 
-                         preparing myself for internship opportunities in 
-                         software and IT-related roles. <br/><br/>
+                        aesthetic designs—whether it’s a Figma prototype,
+                        a mobile app concept, or a web interface.
+                        <br><br>
 
-                        I’m always open to learning, experimenting with new 
-                        tools, and collaborating on creative or technical 
-                        projects that help me grow as a developer.</p>
+                        I’m always open to learning, experimenting with new
+                        tools, and collaborating on creative or technical
+                        projects that help me grow as a developer.
+                    </p>
+
                 </div>
+
             </div>
+
         </div>
-        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'">
+
     </section>
-    
+
+    <!-- ================= SKILLS ================= -->
+
     <section id="skills">
+
         <div class="skills-bg-wrapper">
+
             <p class="section__text__p1">Explore My</p>
+
             <h1 class="title">Tech Stack Skills</h1>
-    
+
             <div class="tech-stack-container">
+
                 <div class="tech-card">
-                    <img src="./assests/html.png" alt="HTML" class="tech-icon">
+                    <img src="./assests/html.png" alt="" class="tech-icon">
                     <span class="tech-name">HTML</span>
                 </div>
+
                 <div class="tech-card">
-                    <img src="./assests/css.png" alt="CSS" class="tech-icon">
+                    <img src="./assests/css.png" alt="" class="tech-icon">
                     <span class="tech-name">CSS</span>
                 </div>
+
                 <div class="tech-card">
-                    <img src="./assests/js.png" alt="JavaScript" class="tech-icon">
+                    <img src="./assests/js.png" alt="" class="tech-icon">
                     <span class="tech-name">JavaScript</span>
                 </div>
+
                 <div class="tech-card">
-                    <img src="./assests/figma.png" alt="Figma" class="tech-icon">
+                    <img src="./assests/figma.png" alt="" class="tech-icon">
                     <span class="tech-name">FIGMA</span>
                 </div>
+
                 <div class="tech-card">
-                    <img src="./assests/react.png" alt="React" class="tech-icon">
+                    <img src="./assests/react.png" alt="" class="tech-icon">
                     <span class="tech-name">REACT</span>
                 </div>
+
                 <div class="tech-card">
-                    <img src="./assests/node.png" alt="NodeJS" class="tech-icon">
-                    <span class="tech-name">NodeJS</span>
+                    <img src="./assests/node.png" alt="" class="tech-icon">
+                    <span class="tech-name">NODEJS</span>
                 </div>
+
                 <div class="tech-card">
-                    <img src="./assests/mongodb.png" alt="MongoDB" class="tech-icon">
+                    <img src="./assests/mongodb.png" alt="" class="tech-icon">
                     <span class="tech-name">MONGODB</span>
                 </div>
+
                 <div class="tech-card">
-                    <img src="./assests/c.png" alt="C" class="tech-icon">
-                    <span class="tech-name">C</span>
+                    <img src="./assests/python.png" alt="" class="tech-icon">
+                    <span class="tech-name">PYTHON</span>
                 </div>
-                <div class="tech-card">
-                    <img src="./assests/c++.png" alt="C++" class="tech-icon">
-                    <span class="tech-name">C++</span>
-                </div>
-                <div class="tech-card">
-                    <img src="./assests/java.png" alt="JAVA" class="tech-icon">
-                    <span class="tech-name">JAVA</span>
-                </div>
-                <div class="tech-card">
-                    <img src="./assests/git.png" alt="GIT" class="tech-icon">
-                    <span class="tech-name">GIT</span>
-                </div>
-                <div class="tech-card">
-                    <img src="./assests/github.png" alt="GitHub" class="tech-icon">
-                    <span class="tech-name">GitHub</span>
-                </div>
-                <div class="tech-card">
-                    <img src="./assests/python.png" alt="Python" class="tech-icon">
-                    <span class="tech-name">Python</span>
-                </div>
-                <div class="tech-card">
-                    <img src="./assests/canva.png" alt="CANVA" class="tech-icon">
-                    <span class="tech-name">CANVA</span>
-                </div>
-                <div class="tech-card">
-                    <img src="./assests/kotlin.png" alt="KOTLIN" class="tech-icon">
-                    <span class="tech-name">KOTLIN</span>
-                </div>
-                <div class="tech-card">
-                    <img src="./assests/flutter.png" alt="Flutter" class="tech-icon">
-                    <span class="tech-name">Flutter</span>
-                </div>
+
             </div>
+
         </div>
+
     </section>
+
+    <!-- ================= PROJECTS ================= -->
 
     <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
 
-    <div class="projects-container">
+        <p class="section__text__p1">Browse My Recent</p>
 
-        <!-- Project 1 -->
-        <div class="project-card">
-            <img src="./assests/project1.png" alt="Project 1" class="project-img">
+        <h1 class="title">Projects</h1>
 
-            <div class="project-content">
-                <h2 class="project-title">Smart Campus Operations Hub</h2>
+        <div class="projects-container">
 
-                <p class="project-description">
-                    CampusOps Hub is a full-stack Smart Campus Operations Hub developed for the IT3030 Programming Applications and Frameworks Assignment 2026.
-                    <br>
-                    The system helps manage campus resources, bookings, maintenance tickets, notifications, user roles, and authentication through a Spring Boot REST API and React web application.
-                </p>
+            <!-- PROJECT 1 -->
 
-                <div class="project-tech">
-                    <span>React</span>
-                    <span>Spring Boot</span>
-                    <span>MySQL</span>
+            <div class="project-card">
+
+                <img src="./assests/project1.png" alt="" class="project-img">
+
+                <div class="project-content">
+
+                    <h2 class="project-title">
+                        Smart Campus Operations Hub
+                    </h2>
+
+                    <p class="project-description">
+                        CampusOps Hub is a full-stack Smart Campus Operations Hub developed for the IT3030 Programming Applications and Frameworks Assignment 2026.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Spring Boot</span>
+                        <span>MySQL</span>
+                    </div>
+
+                    <div class="project-buttons">
+
+                        <button class="project-btn"
+                            onclick="window.open('https://github.com/D0017/it3030-paf-2026-smart-campus-group79')">
+                            GitHub
+                        </button>
+
+                    </div>
+
                 </div>
 
-                <div class="project-buttons">
-                    <button class="project-btn"
-                        onclick="window.open('https://github.com/D0017/it3030-paf-2026-smart-campus-group79')">
-                        GitHub
-                    </button>
-                </div>
             </div>
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card">
+
+                <img src="./assests/project2.png" alt="" class="project-img">
+
+                <div class="project-content">
+
+                    <h2 class="project-title">
+                        StudySync
+                    </h2>
+
+                    <p class="project-description">
+                        StudySync is a web-based academic management platform designed for collaboration and learning management.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Tailwind</span>
+                        <span>Vite</span>
+                    </div>
+
+                    <div class="project-buttons">
+
+                        <button class="project-btn"
+                            onclick="window.open('https://github.com/D0017/studysync')">
+                            GitHub
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <!-- Project 2 -->
-        <div class="project-card">
-            <img src="./assests/project2.png" alt="Project 2" class="project-img">
-
-            <div class="project-content">
-                <h2 class="project-title">StudySync - Academic Group & Learning Management System</h2>
-
-                <p class="project-description">
-                    StudySync is a web-based academic management platform designed to support structured university group formation, lecturer coordination, project workflow tracking, discussion-based collaboration, and shared learning resources.
-                    <br>
-                    It brings academic administration and student teamwork into one centralized system.
-                </p>
-
-                <div class="project-tech">
-                    <span>React</span>
-                    <span>Tailwind</span>
-                    <span>Vite</span>
-                </div>
-
-                <div class="project-buttons">
-                    <button class="project-btn"
-                        onclick="window.open('https://github.com/D0017/studysync')">
-                        GitHub
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
     </section>
-   
+
     <div class="section-divider"></div>
 
+    <!-- ================= CONTACT ================= -->
+
     <section id="contact">
-    <p class="section__text__p1">Get In Touch</p>
-    <h1 class="title">Contact Me</h1>
 
-    <div class="contact-container">
+        <p class="section__text__p1">Get In Touch</p>
 
-        <!-- LEFT SIDE -->
-        <div class="contact-info">
+        <h1 class="title">Contact Me</h1>
 
-            <div class="contact-card">
-                <img src="./assests/email.png" class="contact-icon" alt="">
-                <div>
-                    <h3>Email</h3>
-                    <p>pavanyarathnayaka02@gmail.com</p>
-                </div>
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <!-- EMAIL -->
+
+                <a href="mailto:pavanyarathnayaka02@gmail.com" class="contact-link">
+
+                    <div class="contact-card">
+
+                        <img src="./assests/email.png" class="contact-icon" alt="">
+
+                        <div>
+                            <h3>Email</h3>
+                            <p>pavanyarathnayaka02@gmail.com</p>
+                        </div>
+
+                    </div>
+
+                </a>
+
+                <!-- LINKEDIN -->
+
+                <a href="https://www.linkedin.com/in/pavanya-shanali-rathnayaka-2180b0346/"
+                   target="_blank"
+                   class="contact-link">
+
+                    <div class="contact-card">
+
+                        <img src="./assests/linkedin.png" class="contact-icon" alt="">
+
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p>linkedin.com/in/pavanya-shanali-rathnayaka</p>
+                        </div>
+
+                    </div>
+
+                </a>
+
+                <!-- GITHUB -->
+
+                <a href="https://github.com/shanalie26"
+                   target="_blank"
+                   class="contact-link">
+
+                    <div class="contact-card">
+
+                        <img src="./assests/github.png" class="contact-icon" alt="">
+
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>github.com/shanalie26</p>
+                        </div>
+
+                    </div>
+
+                </a>
+
+                <!-- LOCATION -->
+
+                <a href="https://maps.google.com/?q=Pannipitiya,Colombo,SriLanka"
+                   target="_blank"
+                   class="contact-link">
+
+                    <div class="contact-card">
+
+                        <img src="./assests/location.png" class="contact-icon" alt="">
+
+                        <div>
+                            <h3>Location</h3>
+                            <p>Pannipitiya, Colombo, Sri Lanka.</p>
+                        </div>
+
+                    </div>
+
+                </a>
+
             </div>
 
-            <div class="contact-card">
-                <img src="./assests/linkedin.png" class="contact-icon" alt="">
-                <div>
-                    <h3>LinkedIn</h3>
-                    <p>linkedin.com/in/pavanya-shanali-rathnayaka</p>
-                </div>
-            </div>
+            <!-- CONTACT FORM -->
 
-            <div class="contact-card">
-                <img src="./assests/github.png" class="contact-icon" alt="">
-                <div>
-                    <h3>GitHub</h3>
-                    <p>github.com/shanalie26</p>
-                </div>
-            </div>
+            <form action="https://formspree.io/f/xgodgvwk"
+                  method="POST"
+                  class="contact-form">
 
-            <div class="contact-card">
-                <img src="./assests/location.png" class="contact-icon" alt="">
-                <div>
-                    <h3>Location</h3>
-                    <p>Pannipitiya, Colombo, Sri Lanka.</p>
-                </div>
-            </div>
+                <input type="text" name="name" placeholder="Your Name" required>
+
+                <input type="email" name="email" placeholder="Your Email" required>
+
+                <textarea name="message"
+                          rows="7"
+                          placeholder="Your Message"
+                          required></textarea>
+
+                <button type="submit" class="contact-btn">
+                    Send Message
+                </button>
+
+            </form>
 
         </div>
 
-        <!-- RIGHT SIDE -->
-        <form action="https://formspree.io/f/xgodgvwk"
-              method="POST"
-              class="contact-form">
-
-            <input type="text" name="name" placeholder="Your Name" required>
-
-            <input type="email" name="email" placeholder="Your Email" required>
-
-            <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
-
-            <button type="submit" class="contact-btn">
-                Send Message
-            </button>
-
-        </form>
-
-    </div>
     </section>
 
+    <!-- ================= FOOTER ================= -->
+
     <footer>
-    <div class="footer-content">
 
-        <h2>Pavanya Shanali Rathnayaka</h2>
-        <p>SLIIT Undergraduate</p>
+        <div class="footer-content">
 
-        <p class="copyright">
-            © 2026 Pavanya Shanali Rathnayaka. All Rights Reserved.
-        </p>
-    </div>
+            <h2>Pavanya Shanali Rathnayaka</h2>
+
+            <p>SLIIT Undergraduate</p>
+
+            <p class="copyright">
+                © 2026 Pavanya Shanali Rathnayaka. All Rights Reserved.
+            </p>
+
+        </div>
+
     </footer>
 
-   <script src="script.js"></script> 
+    <script src="script.js"></script>
+
 </body>
 </html>

@@ -575,6 +575,16 @@ section {
     box-shadow: 0 14px 30px rgba(0,0,0,0.12);
 }
 
+.contact-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.contact-link:hover {
+    text-decoration: none;
+}
+
 .contact-icon {
     width: 35px;
     height: 35px;

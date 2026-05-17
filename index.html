@@ -15,50 +15,79 @@
 
     <!-- ================= NAVBAR ================= -->
 
-    <nav id="desktop-nav">
+<nav id="desktop-nav">
 
-        <div class="logo">PORTFOLIO</div>
+    <div class="logo">PORTFOLIO</div>
 
-        <div>
-            <ul class="nav-links">
-                <li><a href="#profile">Home</a></li>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- DESKTOP DARK MODE BUTTON -->
+    <button id="theme-toggle">🌙</button>
+
+</nav>
+
+<!-- ================= MOBILE NAV ================= -->
+
+<nav id="hamburger-nav">
+
+    <div class="logo">PORTFOLIO</div>
+
+    <div class="hamburger-menu">
+
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
 
-        <button id="theme-toggle">🌙</button>
+        <div class="menu-links">
 
-    </nav>
+            <li>
+                <a href="#profile" onclick="toggleMenu()">
+                    Home
+                </a>
+            </li>
 
-    <!-- ================= MOBILE NAV ================= -->
+            <li>
+                <a href="#about" onclick="toggleMenu()">
+                    About me
+                </a>
+            </li>
 
-    <nav id="hamburger-nav">
+            <li>
+                <a href="#skills" onclick="toggleMenu()">
+                    Skills
+                </a>
+            </li>
 
-        <div class="logo">PORTFOLIO</div>
+            <li>
+                <a href="#projects" onclick="toggleMenu()">
+                    Projects
+                </a>
+            </li>
 
-        <div class="hamburger-menu">
-
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <div class="menu-links">
-                <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
-                <li><a href="#about" onclick="toggleMenu()">About me</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+            <li>
+                <a href="#contact" onclick="toggleMenu()">
+                    Contact
+                </a>
+            </li>
 
         </div>
 
-    </nav>
+    </div>
 
+    <!-- MOBILE DARK MODE BUTTON -->
+    <button id="theme-toggle-mobile">🌙</button>
+
+</nav>
     <!-- ================= PROFILE ================= -->
 
     <section id="profile">
@@ -112,6 +141,8 @@
         </div>
 
     </section>
+
+    <div class="section-divider"></div>
 
     <!-- ================= ABOUT ================= -->
 
